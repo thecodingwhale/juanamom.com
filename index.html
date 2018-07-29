@@ -2,8 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-serif-pro" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 </head>
+<style>
+  body {
+    color: #313131;
+  }
+  @keyframes heartbeat
+  {
+    0%
+    {
+      transform: scale( .75 );
+    }
+    20%
+    {
+      transform: scale( 1 );
+    }
+    40%
+    {
+      transform: scale( .75 );
+    }
+    60%
+    {
+      transform: scale( 1 );
+    }
+    80%
+    {
+      transform: scale( .75 );
+    }
+    100%
+    {
+      transform: scale( .75 );
+    }
+  }
+
+  .primary-font {
+     font-family: 'SourceSerifProExtraLight', serif;
+     font-weight: normal;
+     font-style: normal;
+  }
+  .secondary-font {
+     font-family: 'Open Sans', sans-serif;
+     font-weight: normal;
+     font-style: normal;
+  }
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    text-align: center;
+  }
+  .icon {
+    font-size: 28px;
+    margin-bottom: 0px;
+    color: #ec4154;
+    animation: heartbeat 1s infinite;
+  }
+  .title {
+    font-size: 43px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .description {
+    font-size: 13px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+</style>
 <body>
-  <h1>Hello</h1>
+  <div class="container">
+    <div class="content">
+      <i class="icon fas fa-heart"></i>
+      <h1 class="title primary-font">
+        JuanaMom
+      </h1>
+      <p class="description secondary-font">Coming Soon</p>
+    </div>
+  </div>
 </body>
 </html>
